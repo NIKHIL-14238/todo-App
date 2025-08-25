@@ -5,7 +5,9 @@ This is project is a simplete todo Apllication which has title and description a
 it has the following features  :-
 
 -Anyone can create a todo
+<br>
 -Anyone can see their exsisiting todo
+<br>
 -Anyone can mark a todo as done 
 
 > https://todo-app-rosy-gamma-61.vercel.app
