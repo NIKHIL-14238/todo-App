@@ -7,7 +7,7 @@ import './App.css'
 function App() {
 const [todos,setTodos] = useState( [] );
 
-fetch("http://localhost:3000/geting")
+fetch("https://todo-backend.onrender.com/geting")
 .then(async function (res){
   const json = await res.json();
   setTodos(json.todos);
