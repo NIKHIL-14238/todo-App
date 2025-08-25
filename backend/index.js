@@ -5,10 +5,11 @@ const {createtodo,updatetodo} = require("./types");
 const app = express();
 const {todo} = require("./db");
 const cors = require("cors");
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 app.use(express.json());
-app.use(cors({origin :"http://localhost:5173"}));
+app.use(cors({origin :"https://todo-app-rosy-gamma-61.vercel.app"}));
 app.post('/puting',async function(req,res){
 const createPayLoad = req.body ;
 const parsedPayLoad = createtodo.safeParse(createPayLoad);
