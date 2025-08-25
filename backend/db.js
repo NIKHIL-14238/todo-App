@@ -1,7 +1,7 @@
 // THIS IS A DATABASE FILE --> FOR THE MONGO DB 
 const mongoose  = require("mongoose");
 // .env
-mongoose.connect("mongodb+srv://manisinikhil:ozeidc7k@clustertodo.tlse1ya.mongodb.net/?retryWrites=true&w=majority&appName=Clustertodo");
+mongoose.connect(process.env.MONGO_URI);
 
 const todoSchema =  mongoose.Schema({
 
