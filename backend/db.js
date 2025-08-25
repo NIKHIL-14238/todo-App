@@ -1,0 +1,17 @@
+// THIS IS A DATABASE FILE --> FOR THE MONGO DB 
+const mongoose  = require("mongoose");
+// .env
+mongoose.connect("mongodb+srv://manisinikhil:ozeidc7k@clustertodo.tlse1ya.mongodb.net/?retryWrites=true&w=majority&appName=Clustertodo");
+
+const todoSchema =  mongoose.Schema({
+
+    title: String ,
+    description : String , 
+    completed: Boolean
+});
+const todo = mongoose.model('todos' , todoSchema);
+
+module.exports ={
+    todo 
+}
+
