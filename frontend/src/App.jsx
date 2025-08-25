@@ -7,7 +7,7 @@ import './App.css'
 function App() {
 const [todos,setTodos] = useState( [] );
 
-fetch("https://todo-backend.onrender.com/geting")
+fetch("https://todo-app-eq6c.onrender.com/geting")
 .then(async function (res){
   const json = await res.json();
   setTodos(json.todos);
