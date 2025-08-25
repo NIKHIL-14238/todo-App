@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 
 app.use(express.json());
-app.use(cors({origin :"https://todo-app-rosy-gamma-61.vercel.app"}));
+app.use(cors());
 app.post('/puting',async function(req,res){
 const createPayLoad = req.body ;
 const parsedPayLoad = createtodo.safeParse(createPayLoad);
