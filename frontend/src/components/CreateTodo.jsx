@@ -15,7 +15,7 @@ export function CreateTodo(){
         }} ></input>
         <br></br>
         <button style={{margin : 10 ,padding:10}} onClick={()=>{
-            fetch("http://localhost:3000/puting", {
+            fetch("https://todo-app-eq6c.onrender.com/puting", {
                 method :"POST",
                 body : JSON.stringify({
                 title : title,
