@@ -36,9 +36,29 @@ This app allows users to add, view, and mark their tasks as completed.
 
 ## ⚙️ Installation & Setup  
 
-Follow these steps to run the project locally 👇  
+Run the following commands step by step 👇  
 
-### 1. Clone the repository  
 ```bash
+# 1. Clone the repository
 git clone https://github.com/YOUR_USERNAME/todo-App.git
 cd todo-App
+
+# 2. Install dependencies for backend
+cd backend
+npm install
+
+# 3. Install dependencies for frontend
+cd ../frontend
+npm install
+
+# 4. Create environment variables (inside backend folder)
+echo "MONGO_URI=your_mongodb_connection_string" >> ../backend/.env
+echo "PORT=5000" >> ../backend/.env
+
+# 5. Start backend server
+cd ../backend
+npm start
+
+# 6. Open a new terminal and start frontend
+cd ../frontend
+npm start
